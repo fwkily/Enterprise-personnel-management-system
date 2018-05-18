@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base;
+package edu.zut.cs.javaee.epms.base;
 
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;
 

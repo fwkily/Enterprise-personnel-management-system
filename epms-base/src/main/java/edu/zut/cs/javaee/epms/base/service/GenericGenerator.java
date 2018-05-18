@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.service;
+package edu.zut.cs.javaee.epms.base.service;
 
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;

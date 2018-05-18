@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.service.impl;
+package edu.zut.cs.javaee.epms.base.service.impl;
 
 import java.io.Serializable;
 import java.util.List;
@@ -7,9 +7,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 
-import edu.zut.cs.javaee.dream.base.dao.GenericDao;
-import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
-import edu.zut.cs.javaee.dream.base.service.GenericManager;
+import edu.zut.cs.javaee.epms.base.dao.GenericDao;
+import edu.zut.cs.javaee.epms.base.domain.BaseEntity;
+import edu.zut.cs.javaee.epms.base.service.GenericManager;
 
 /**
  * This class serves as the Base class for all other Managers - namely to hold

@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.web.spring.controller;
+package edu.zut.cs.javaee.epms.base.web.spring.controller;
 
 import java.io.Serializable;
 import java.util.List;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import edu.zut.cs.javaee.dream.base.domain.BaseTreeEntity;
-import edu.zut.cs.javaee.dream.base.service.GenericTreeManager;
+import edu.zut.cs.javaee.epms.base.domain.BaseTreeEntity;
+import edu.zut.cs.javaee.epms.base.service.GenericTreeManager;
 
 @NoRepositoryBean
 public abstract class GenericTreeController<T extends BaseTreeEntity<T>, PK extends Serializable, M extends GenericTreeManager<T, PK>>

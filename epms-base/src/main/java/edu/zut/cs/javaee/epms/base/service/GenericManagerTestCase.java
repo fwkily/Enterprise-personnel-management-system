@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.service;
+package edu.zut.cs.javaee.epms.base.service;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
@@ -13,8 +13,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import edu.zut.cs.javaee.dream.base.BaseAbstractTestCase;
-import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
+import edu.zut.cs.javaee.epms.base.BaseAbstractTestCase;
+import edu.zut.cs.javaee.epms.base.domain.BaseEntity;
 
 @ContextConfiguration(locations = { "classpath:/applicationContextTest-resources.xml",
 		"classpath:/applicationContext-dao.xml", "classpath:/applicationContext-service.xml" })

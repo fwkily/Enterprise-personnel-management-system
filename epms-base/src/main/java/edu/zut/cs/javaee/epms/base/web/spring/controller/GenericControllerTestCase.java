@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.web.spring.controller;
+package edu.zut.cs.javaee.epms.base.web.spring.controller;
 
 import org.junit.runner.RunWith;
 import org.springframework.mock.web.MockHttpServletRequest;

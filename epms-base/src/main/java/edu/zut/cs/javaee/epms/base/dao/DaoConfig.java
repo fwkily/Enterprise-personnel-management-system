@@ -1,10 +1,10 @@
-package edu.zut.cs.javaee.dream.base.dao;
+package edu.zut.cs.javaee.epms.base.dao;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "edu.zut.cs.javaee.dream")
+@ComponentScan(basePackages = "edu.zut.cs.javaee.epms")
 public class DaoConfig {
 
 }

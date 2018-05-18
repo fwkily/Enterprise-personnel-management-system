@@ -1,11 +1,11 @@
-package edu.zut.cs.javaee.dream.base.dao;
+package edu.zut.cs.javaee.epms.base.dao;
 
 import java.io.Serializable;
 import java.util.List;
 
 import org.springframework.data.repository.NoRepositoryBean;
 
-import edu.zut.cs.javaee.dream.base.domain.BaseTreeEntity;
+import edu.zut.cs.javaee.epms.base.domain.BaseTreeEntity;
 
 /**
  * Generic Tree DAO (Data Access Object) with common methods to CRUD POJOs.

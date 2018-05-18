@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.service;
+package edu.zut.cs.javaee.epms.base.service;
 
 import java.io.Serializable;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
+import edu.zut.cs.javaee.epms.base.domain.BaseEntity;
 
 /**
  * Generic Manager that talks to GenericDao to CRUD POJOs.

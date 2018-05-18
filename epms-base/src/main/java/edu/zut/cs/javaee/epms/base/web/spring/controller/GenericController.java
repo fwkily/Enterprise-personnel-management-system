@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.web.spring.controller;
+package edu.zut.cs.javaee.epms.base.web.spring.controller;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
-import edu.zut.cs.javaee.dream.base.service.GenericManager;
+import edu.zut.cs.javaee.epms.base.domain.BaseEntity;
+import edu.zut.cs.javaee.epms.base.service.GenericManager;
 
 public abstract class GenericController<T extends BaseEntity, PK extends Serializable, M extends GenericManager<T, PK>>
 		extends BaseController {

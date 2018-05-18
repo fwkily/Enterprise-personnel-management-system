@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.service.impl;
+package edu.zut.cs.javaee.epms.base.service.impl;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -6,9 +6,9 @@ import java.util.List;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import edu.zut.cs.javaee.dream.base.dao.GenericTreeDao;
-import edu.zut.cs.javaee.dream.base.domain.BaseTreeEntity;
-import edu.zut.cs.javaee.dream.base.service.GenericTreeManager;
+import edu.zut.cs.javaee.epms.base.dao.GenericTreeDao;
+import edu.zut.cs.javaee.epms.base.domain.BaseTreeEntity;
+import edu.zut.cs.javaee.epms.base.service.GenericTreeManager;
 
 /**
  * This class serves as the Base class for all other Managers - namely to hold

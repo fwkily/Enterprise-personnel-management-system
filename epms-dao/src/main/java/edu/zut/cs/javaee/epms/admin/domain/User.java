@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.admin.domain;
+package edu.zut.cs.javaee.epms.admin.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

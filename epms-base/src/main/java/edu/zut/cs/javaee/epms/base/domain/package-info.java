@@ -5,4 +5,4 @@
  * @author liuxiaoming
  * 		
  */
-package edu.zut.cs.javaee.dream.base.domain;
+package edu.zut.cs.javaee.epms.base.domain;

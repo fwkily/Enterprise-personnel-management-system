@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.dao;
+package edu.zut.cs.javaee.epms.base.dao;
 
 import java.io.Serializable;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.junit.Before;
 import org.springframework.test.context.ContextConfiguration;
 
-import edu.zut.cs.javaee.dream.base.BaseAbstractTestCase;
-import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
+import edu.zut.cs.javaee.epms.base.BaseAbstractTestCase;
+import edu.zut.cs.javaee.epms.base.domain.BaseEntity;
 
 @ContextConfiguration(locations = { "classpath:/applicationContextTest-resources.xml",
 		"classpath:/applicationContext-dao.xml" })

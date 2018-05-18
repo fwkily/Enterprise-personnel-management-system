@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.domain;
+package edu.zut.cs.javaee.epms.base.domain;
 
 import java.util.Date;
 

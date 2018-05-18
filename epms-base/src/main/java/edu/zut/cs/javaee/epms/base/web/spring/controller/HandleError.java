@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.base.web.spring.controller;
+package edu.zut.cs.javaee.epms.base.web.spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
