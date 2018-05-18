@@ -3,9 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>edu.zut.cs.javaee</groupId>
-        <artifactId>dream</artifactId>
+        <artifactId>epms</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>dream-client</artifactId>
-    <packaging>war</packaging>
+    <artifactId>epms-client</artifactId>
 </project>

@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>edu.zut.cs.javaee</groupId>
-        <artifactId>dream</artifactId>
+        <artifactId>epms</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>dream-service</artifactId>
+    <artifactId>epms-service</artifactId>
     <dependencies>
         <dependency>
             <groupId>edu.zut.cs.javaee</groupId>
-            <artifactId>dream-dao</artifactId>
+            <artifactId>epms-dao</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
