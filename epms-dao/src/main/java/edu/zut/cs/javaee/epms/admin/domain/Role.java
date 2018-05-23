@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
+import edu.zut.cs.javaee.epms.base.domain.BaseEntity;
 
 @Table(name = "T_ADMIN_ROLE")
 @Entity

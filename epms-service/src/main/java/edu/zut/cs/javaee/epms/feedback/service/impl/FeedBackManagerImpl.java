@@ -1,7 +1,7 @@
-package edu.zut.cs.javaee.dream.feedback.service.impl;
+package edu.zut.cs.javaee.epms.feedback.service.impl;
 
-import edu.zut.cs.javaee.dream.feedback.domain.FeedBack;
-import edu.zut.cs.javaee.dream.feedback.service.FeedbackManager;
+import edu.zut.cs.javaee.epms.feedback.domain.FeedBack;
+import edu.zut.cs.javaee.epms.feedback.service.FeedbackManager;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

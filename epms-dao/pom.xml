@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>edu.zut.cs.javaee</groupId>
+		<groupId>edu.zut.cs.epms</groupId>
 		<artifactId>epms</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>epms-dao</artifactId>
 	<dependencies>
 		<dependency>
-			<groupId>edu.zut.cs.javaee</groupId>
+			<groupId>edu.zut.cs.epms</groupId>
 			<artifactId>epms-base</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
@@ -37,7 +37,7 @@
 					<vendor>hibernate</vendor>
 					<packageToScan>edu.zut.cs.javaee.epms</packageToScan>
 					<jdbcDriver>com.mysql.jdbc.Driver</jdbcDriver>
-					<jdbcUrl>jdbc:mysql://127.0.0.1:3306/course</jdbcUrl>
+					<jdbcUrl>jdbc:mysql://127.0.0.1:3306/epms</jdbcUrl>
 					<jdbcUser>root</jdbcUser>
 					<jdbcPassword>root</jdbcPassword>
 					<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>

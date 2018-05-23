@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.feedback.domain;
+package edu.zut.cs.javaee.epms.feedback.domain;
 
 public class FeedBack {
 

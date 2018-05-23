@@ -11,7 +11,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import edu.zut.cs.javaee.dream.base.domain.BaseTreeEntity;
+import edu.zut.cs.javaee.epms.base.domain.BaseTreeEntity;
 
 @Table(name = "T_ADMIN_GROUP")
 @Entity

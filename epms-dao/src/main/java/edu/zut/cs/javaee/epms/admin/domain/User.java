@@ -6,7 +6,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
+import edu.zut.cs.javaee.epms.base.domain.BaseEntity;
 
 @Table(name = "T_ADMIN_USER")
 @Entity

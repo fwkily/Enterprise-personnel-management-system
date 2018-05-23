@@ -1,7 +1,7 @@
-package edu.zut.cs.javaee.dream.customer.service.impl;
+package edu.zut.cs.javaee.epms.customer.service.impl;
 
-import edu.zut.cs.javaee.dream.admin.domain.User;
-import edu.zut.cs.javaee.dream.customer.service.CustomerManager;
+import edu.zut.cs.javaee.epms.admin.domain.User;
+import edu.zut.cs.javaee.epms.customer.service.CustomerManager;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

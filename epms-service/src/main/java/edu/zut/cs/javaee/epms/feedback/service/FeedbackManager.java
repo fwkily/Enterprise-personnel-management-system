@@ -1,6 +1,6 @@
-package edu.zut.cs.javaee.dream.feedback.service;
+package edu.zut.cs.javaee.epms.feedback.service;
 
-import edu.zut.cs.javaee.dream.feedback.domain.FeedBack;
+import edu.zut.cs.javaee.epms.feedback.domain.FeedBack;
 
 import java.util.List;
 

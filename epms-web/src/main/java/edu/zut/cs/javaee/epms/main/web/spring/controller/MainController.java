@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.main.web.spring.controller;
+package edu.zut.cs.javaee.epms.main.web.spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

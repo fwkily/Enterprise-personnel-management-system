@@ -2,16 +2,16 @@
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>edu.zut.cs.javaee</groupId>
-	<artifactId>dream</artifactId>
+	<groupId>edu.zut.cs.epms</groupId>
+	<artifactId>epms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>dream-base</module>
-		<module>dream-service</module>
-		<module>dream-dao</module>
-		<module>dream-web</module>
-		<module>dream-client</module>
+		<module>epms-base</module>
+		<module>epms-service</module>
+		<module>epms-dao</module>
+		<module>epms-web</module>
+		<module>epms-client</module>
 	</modules>
 
 	<properties>

@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>edu.zut.cs.javaee</groupId>
+		<groupId>edu.zut.cs.epms</groupId>
 		<artifactId>epms</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
@@ -11,7 +11,7 @@
 	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
-			<groupId>edu.zut.cs.javaee</groupId>
+			<groupId>edu.zut.cs.epms</groupId>
 			<artifactId>epms-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

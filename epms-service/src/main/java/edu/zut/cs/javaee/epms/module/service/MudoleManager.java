@@ -1,4 +1,4 @@
-package edu.zut.cs.javaee.dream.module.service;
+package edu.zut.cs.javaee.epms.module.service;
 
 import java.util.List;
 

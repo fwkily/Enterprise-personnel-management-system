@@ -1,11 +1,11 @@
-package edu.zut.cs.javaee.dream.module.domain;
+package edu.zut.cs.javaee.epms.module.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-import edu.zut.cs.javaee.dream.base.domain.BaseTreeEntity;
+import edu.zut.cs.javaee.epms.base.domain.BaseTreeEntity;
 
 @Entity
 @Table(name = "T_MODULE")

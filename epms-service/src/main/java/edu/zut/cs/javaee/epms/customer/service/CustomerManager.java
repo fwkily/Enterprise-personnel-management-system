@@ -1,6 +1,6 @@
-package edu.zut.cs.javaee.dream.customer.service;
+package edu.zut.cs.javaee.epms.customer.service;
 
-import edu.zut.cs.javaee.dream.admin.domain.User;
+import edu.zut.cs.javaee.epms.admin.domain.User;
 
 import java.util.List;
 
