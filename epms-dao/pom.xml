@@ -37,9 +37,9 @@
 					<vendor>hibernate</vendor>
 					<packageToScan>edu.zut.cs.javaee.epms</packageToScan>
 					<jdbcDriver>com.mysql.jdbc.Driver</jdbcDriver>
-					<jdbcUrl>jdbc:mysql://127.0.0.1:3306/epms</jdbcUrl>
-					<jdbcUser>root</jdbcUser>
-					<jdbcPassword>root</jdbcPassword>
+					<jdbcUrl>jdbc:mysql://202.196.37.91:3306/epms</jdbcUrl>
+					<jdbcUser>zutnlp</jdbcUser>
+					<jdbcPassword>zutnlp</jdbcPassword>
 					<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
 					<properties>
 						<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
