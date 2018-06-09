@@ -48,7 +48,7 @@ public class Pay extends BaseTreeEntity<Pay> {
 		return money;
 	}
 	public void setMoney(String money) {
-		this.money = money ;
+		this.money = money;
 	}
 	
 }
