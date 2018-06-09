@@ -5,3 +5,4 @@ import org.springframework.test.context.junit4.AbstractTransactionalJUnit4Spring
 public class BaseAbstractTestCase extends AbstractTransactionalJUnit4SpringContextTests {
 
 }
+ 
