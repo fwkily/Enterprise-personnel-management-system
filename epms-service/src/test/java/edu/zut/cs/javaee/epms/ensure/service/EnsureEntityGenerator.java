@@ -17,13 +17,14 @@ public class EnsureEntityGenerator extends GenericGenerator {
 			Ensure g = new Ensure();
 			g.setName("ensure_" + i);
 			this.ensureManager.save(g);
-			for (int j = 0; j < 10; j++) {
+			for (int j = 0; j < 10; j++)
+			{
 				Ensure ensure = new Ensure();
 				ensure.setName("ensure_" + i + "_" + j);
 				ensure.setParent(g);
-				g = this.ensureManager.save(ensure);
+				g = this.ensureManager.save(ensure) ;     
+		
 			}
 		}
 	}
-
 }
