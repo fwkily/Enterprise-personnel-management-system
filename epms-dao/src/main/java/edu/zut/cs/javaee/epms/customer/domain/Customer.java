@@ -2,13 +2,18 @@ package edu.zut.cs.javaee.epms.customer.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import edu.zut.cs.javaee.epms.base.domain.BaseEntity;
+import edu.zut.cs.javaee.epms.base.domain.BaseTreeEntity;
+import edu.zut.cs.javaee.epms.pay.domain.Pay;
 
 @Table(name = "T_CUSTOMER")
 @Entity
-public class Customer extends BaseEntity {
+@NamedQueries({ @NamedQuery(name = "Customer.getRoot", query = "select m from Customer m where m.parent is null") })
+public class Customer extends BaseTreeEntity<Customer> {
 
 	/**
 	 * 

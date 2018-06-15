@@ -1,23 +1,28 @@
 package edu.zut.cs.javaee.epms.customer.service.impl;
 
-import edu.zut.cs.javaee.epms.admin.domain.User;
+import edu.zut.cs.javaee.epms.base.service.impl.GenericManagerImpl;
+import edu.zut.cs.javaee.epms.customer.dao.CustomerDao;
+import edu.zut.cs.javaee.epms.customer.domain.Customer;
 import edu.zut.cs.javaee.epms.customer.service.CustomerManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Component
-public class CustomerManagerImpl implements CustomerManager {
+public class CustomerManagerImpl extends GenericManagerImpl<Customer, Long> implements CustomerManager {
 
-    @Override
-    public List<User> findByPostcode(String postcode) {
-        List<User> result = new ArrayList<User>();
-        for (int i = 0; i < 10; i++) {
-            User u = new User();
-            result.add(u);
-        }
-        return result;
-    }
+	CustomerDao customerDao;
 
+	@Autowired
+	public void setCustomerDao(CustomerDao customerDao) {
+		this.customerDao = customerDao;
+		this.dao = this.customerDao;
+	}
+
+	@Override
+	public Customer findbyPostcode(String postcode) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+ 
 }

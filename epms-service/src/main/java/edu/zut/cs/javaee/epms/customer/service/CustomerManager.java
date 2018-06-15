@@ -1,16 +1,14 @@
 package edu.zut.cs.javaee.epms.customer.service;
 
 import edu.zut.cs.javaee.epms.admin.domain.User;
+import edu.zut.cs.javaee.epms.base.service.GenericManager;
+import edu.zut.cs.javaee.epms.customer.domain.Customer;
+import edu.zut.cs.javaee.epms.pay.domain.Pay;
 
 import java.util.List;
 
-public interface CustomerManager {
+public interface CustomerManager extends GenericManager<Customer, Long>{
 
-    /**
-     * get customers according to postcode
-     *
-     * @param postcode
-     * @return
-     */
-    List<User> findByPostcode(String postcode);
+	List<Customer> findAll();
+	Customer findbyPostcode(String postcode);
 }

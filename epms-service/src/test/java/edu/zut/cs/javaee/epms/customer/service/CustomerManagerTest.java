@@ -24,7 +24,7 @@ public class CustomerManagerTest {
     @Test
     public void testFindByPostcode() {
         String postcode = "NR74DU";
-        List<User> result = this.customerManager.findByPostcode(postcode);
+        List<User> result = (List<User>) this.customerManager.findbyPostcode(postcode);
         List<User> expected = new ArrayList<User>();
         for (int i = 0; i < 10; i++) {
             User u = new User();
