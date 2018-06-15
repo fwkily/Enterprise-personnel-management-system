@@ -7,7 +7,6 @@ import edu.zut.cs.javaee.epms.ensure.domain.Ensure;
 
 public interface EnsureManager extends GenericManager<Ensure, Long>
 {
-
 	List<Ensure> findAll();
 	Ensure findbyName(String name);
 }
