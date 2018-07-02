@@ -9,3 +9,4 @@ public interface PayManager extends GenericManager<Pay, Long> {
 	List<Pay> findAll();
 	Pay findbyName(String payname);
 }
+
