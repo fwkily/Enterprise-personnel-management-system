@@ -162,7 +162,7 @@ var ensureGrid = new Ext.grid.GridPanel({
 
 ensureGrid.getSelectionModel().on('selectionchange',
 		function(selModel, selections) {
-			studentGrid.down('#delete').setDisabled(selections.length === 0);
+			ensureGrid.down('#delete').setDisabled(selections.length === 0);
 		});
 
 new Ext.form.NumberField({

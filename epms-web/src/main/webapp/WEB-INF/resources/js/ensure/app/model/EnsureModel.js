@@ -1,4 +1,4 @@
-Ext.define('ensure.model.StudentModel', {
+Ext.define('ensure.model.EnsureModel', {
 	extend : 'Ext.data.Model',
 	alias : 'widget.ensureModel',
 	fields : [ {
