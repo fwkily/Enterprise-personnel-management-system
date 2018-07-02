@@ -38,7 +38,7 @@ Ext.define('ensure.view.EnsureGrid', {
 		width : 150,
 		dataIndex : 'dateModified',
 		renderer : Ext.util.Format.dateRenderer('Y/m/d H:i:s'),
-		sortable : true
+		sortable : trues
 	} ],
 	viewConfig : {
 		columnsText : '列',
@@ -48,7 +48,7 @@ Ext.define('ensure.view.EnsureGrid', {
 
 	bbar : new Ext.PagingToolbar({
 		pageSize : pageSize,// 每页显示的记录值
-		store : studentStore,
+		store : ensureStore,
 		displayInfo : true,
 		firstTest : '首页',
 		lastText : '尾页',
