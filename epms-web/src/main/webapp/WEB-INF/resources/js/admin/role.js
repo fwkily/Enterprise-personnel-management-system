@@ -7,34 +7,8 @@ Ext.define('student.StudentModel', {
 						type : 'int',
 						sortable : true
 					}, {
-						name : 'code',
+						name : 'name',
 						type : 'string',
-						sortable : true
-					}, {
-						name : 'fullName',
-						type : 'string',
-						sortable : true
-					}, {
-						name : 'gender',
-						type : 'string',
-						sortable : true
-					}, {
-						name : 'grade',
-						type : 'string',
-						sortable : true
-					}, {
-						name : 'clazz',
-						type : 'string',
-						sortable : true
-					}, {
-						name : 'dateCreated',
-						type : 'date',
-						dateFormat : 'time',
-						sortable : true
-					}, {
-						name : 'dateModified',
-						type : 'date',
-						dateFormat : 'time',
 						sortable : true
 					}]
 		});
@@ -125,60 +99,21 @@ var studentGrid = new Ext.grid.GridPanel({
 			loadMask : true,
 			stripeRows : true,
 			width : 600,
-			title : '学生基本信息列表',
+			title : '规则信息列表',
 			columns : [{
 						text : 'ID',
 						width : 50,
 						sortable : true,
 						dataIndex : 'id'
 					}, {
-						text : "学号",
+						text : "名字",
 						width : 120,
 						sortable : true,
-						dataIndex : 'code',
+						dataIndex : 'name',
 						editor : textFieldEditor,
 						field : {
 							xtype : 'textfield'
 						}
-					}, {
-						text : "姓名",
-						width : 80,
-						sortable : true,
-						dataIndex : 'fullName',
-						editor : textFieldEditor,
-						field : {
-							xtype : 'textfield'
-						}
-					}, {
-						text : "性别",
-						width : 50,
-						sortable : true,
-						dataIndex : 'gender',
-						editor : genderFieldEditor
-					}, {
-						text : "年级",
-						width : 50,
-						sortable : true,
-						editor : textFieldEditor,
-						dataIndex : 'grade'
-					}, {
-						text : "班级",
-						width : 80,
-						sortable : true,
-						editor : textFieldEditor,
-						dataIndex : 'clazz'
-					}, {
-						text : "添加时间",
-						width : 150,
-						dataIndex : 'dateCreated',
-						renderer : Ext.util.Format.dateRenderer('Y/m/d H:i:s'),
-						sortable : true
-					}, {
-						text : "修改时间",
-						width : 150,
-						dataIndex : 'dateModified',
-						renderer : Ext.util.Format.dateRenderer('Y/m/d H:i:s'),
-						sortable : true
 					}],
 			viewConfig : {
 				columnsText : '列',
@@ -236,17 +171,9 @@ var studentForm = new Ext.form.FormPanel({
 			defaultType : 'textfiled',
 			labelWidth : 30,
 			items : [{
-						fieldLabel : "学号",
-						xtype : 'textfield',
-						name : 'code'
-					}, {
-						fieldLabel : "姓名",
+						fieldLabel : "名字",
 						xtype : 'textfield',
 						name : 'name'
-					}, {
-						fieldLabel : "性别",
-						xtype : 'textfield',
-						name : 'gender'
 					}],
 			buttons : [{
 						xtype : 'button',
@@ -262,11 +189,11 @@ var studentForm = new Ext.form.FormPanel({
 		})
 
 Ext.application({
-			name : '学生信息',
+			name : '规则信息',
 			launch : function() {
 				Ext.create('Ext.container.Viewport', {
 							layout : 'border',
-							items : [studentForm, studentGrid]
+							items : [roleForm, roleGrid]
 						});
 			}
 		});

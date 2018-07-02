@@ -2,14 +2,14 @@ Ext.Loader.setConfig({
 	enabled : true
 });
 Ext.application({
-	name : 'student',
-	appFolder : server_context + '/resources/js/student/app',
-	controllers : [ 'StudentController' ],
+	name : 'role',
+	appFolder : server_context + '/resources/js/admin/app_r',
+	controllers : [ 'RoleController' ],
 	launch : function() {
 		Ext.create('Ext.container.Viewport', {
 			layout : 'fit',
 			items : [ {
-				xtype : 'studentGrid'
+				xtype : 'roleGrid'
 			} ]
 		});
 	}
