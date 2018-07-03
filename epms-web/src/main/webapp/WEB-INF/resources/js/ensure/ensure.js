@@ -103,7 +103,7 @@ var ensureGrid = new Ext.grid.GridPanel({
 			loadMask : true,
 			stripeRows : true,
 			width : 600,
-			title : '学生基本信息列表',
+			title : '维护信息基本表',
 			columns : [{
 						text : 'ID',
 						width : 50,
