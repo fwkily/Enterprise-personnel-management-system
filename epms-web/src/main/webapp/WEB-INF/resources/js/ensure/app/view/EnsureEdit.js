@@ -1,7 +1,7 @@
 Ext.define('ensure.view.EnsureEdit', {
 	extend : 'Ext.window.Window',
 	alias : 'widget.ensureEdit',
-	title : '编辑学生信息',
+	title : '维护信息',
 	layout : 'fit',
 	autoShow : true,
 	initComponent : function() {

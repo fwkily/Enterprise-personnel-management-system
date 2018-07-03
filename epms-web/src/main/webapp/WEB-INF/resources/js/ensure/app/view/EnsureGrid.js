@@ -5,7 +5,7 @@ var ensureStore = Ext.create('ensure.store.EnsureStore');
 Ext.define('ensure.view.EnsureGrid', {
 	extend : 'Ext.grid.GridPanel',
 	alias : 'widget.ensureGrid',
-	title : 'Java EE 课程-学生列表',
+	title : '维护信息',
 	store : ensureStore,
 	columns : [ {
 		text : 'ID',
