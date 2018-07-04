@@ -10,14 +10,14 @@ import edu.zut.cs.javaee.epms.admin.service.UserManager;
 import edu.zut.cs.javaee.epms.base.web.spring.controller.GenericController;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("/user/user")
 public class UserController extends GenericController<User, Long, UserManager> {
 
     UserManager userManager;
 
     @RequestMapping(method = RequestMethod.GET, value = "/index.html")
     public String index() {
-        return "/admin/index_user";
+        return "user/index";
     }
 
     @Autowired

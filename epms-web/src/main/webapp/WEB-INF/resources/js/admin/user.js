@@ -1,12 +1,12 @@
 Ext.require(['Ext.data.*', 'Ext.grid.*']);
 
-Ext.define('student.StudentModel', {
+Ext.define('user.StudentModel', {
 			extend : 'Ext.data.Model',
 			fields : [{
 						name : 'id',
 						type : 'int',
 						sortable : true
-					}, {
+					},  {
 						name : 'username',
 						type : 'string',
 						sortable : true
@@ -15,8 +15,18 @@ Ext.define('student.StudentModel', {
 						type : 'string',
 						sortable : true
 					}, {
-						name : 'email',
+						name : 'eamil',
 						type : 'string',
+						sortable : true
+					},{
+						name : 'dateCreated',
+						type : 'date',
+						dateFormat : 'time',
+						sortable : true
+					}, {
+						name : 'dateModified',
+						type : 'date',
+						dateFormat : 'time',
 						sortable : true
 					}]
 		});
@@ -26,7 +36,7 @@ var pageSize = 20;
 var store = new Ext.data.Store({
 			autoLoad : true,
 			autoSync : true,// 需要同步
-			model : 'student.StudentModel',
+			model : 'user.StudentModel',
 			proxy : {
 				type : 'rest',
 				url : './.json',
@@ -67,25 +77,25 @@ var textFieldEditor = {
 	maxText : '最多输入{0}个字符！'
 }
 
-var genderFieldEditor = {
-	xtype : 'combo',
-	triggerAction : 'all',
-	forceSelection : true,
-	displayField : 'label',
-	valueField : 'id',
-	mode : 'local',
-	store : {
-		xtype : 'jsonstore',
-		fields : ['id', 'label'],
-		data : [{
-					id : '男',
-					label : '男'
-				}, {
-					id : '女',
-					label : '女'
-				}]
-	}
-}
+//var genderFieldEditor = {
+//	xtype : 'combo',
+//	triggerAction : 'all',
+//	forceSelection : true,
+//	displayField : 'label',
+//	valueField : 'id',
+//	mode : 'local',
+//	store : {
+//		xtype : 'jsonstore',
+//		fields : ['id', 'label'],
+//		data : [{
+//					id : '男',
+//					label : '男'
+//				}, {
+//					id : '女',
+//					label : '女'
+//				}]
+//	}
+//}
 var rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
 			listeners : {
 				cancelEdit : function(rowEditing, context) {
@@ -107,36 +117,45 @@ var studentGrid = new Ext.grid.GridPanel({
 			loadMask : true,
 			stripeRows : true,
 			width : 600,
-			title : '用户基本信息列表',
+			title : '管理员信息列表',
 			columns : [{
 						text : 'ID',
 						width : 50,
 						sortable : true,
 						dataIndex : 'id'
 					}, {
-						text : "账户",
-						width : 120,
+						text : "用户名称",
+						width : 80,
 						sortable : true,
 						dataIndex : 'username',
 						editor : textFieldEditor,
 						field : {
 							xtype : 'textfield'
 						}
-					}, {
-						text : "密码",
+					},  {
+						text : "用户密码",
 						width : 80,
 						sortable : true,
-						dataIndex : 'password',
 						editor : textFieldEditor,
-						field : {
-							xtype : 'textfield'
-						}
-					}, {
-						text : "邮箱",
-						width : 50,
+						dataIndex : 'password'
+					},  {
+						text : "用户邮箱",
+						width : 80,
 						sortable : true,
-						dataIndex : 'email',
-						editor : genderFieldEditor
+						editor : textFieldEditor,
+						dataIndex : 'eamil'
+					},{
+						text : "添加时间",
+						width : 150,
+						dataIndex : 'dateCreated',
+						renderer : Ext.util.Format.dateRenderer('Y/m/d H:i:s'),
+						sortable : true
+					}, {
+						text : "修改时间",
+						width : 150,
+						dataIndex : 'dateModified',
+						renderer : Ext.util.Format.dateRenderer('Y/m/d H:i:s'),
+						sortable : true
 					}],
 			viewConfig : {
 				columnsText : '列',
@@ -193,10 +212,14 @@ var studentForm = new Ext.form.FormPanel({
 			region : 'north',
 			defaultType : 'textfiled',
 			labelWidth : 30,
-			items : [{
-						fieldLabel : "用户",
+			items : [ {
+						fieldLabel : "用户名称",
 						xtype : 'textfield',
 						name : 'username'
+					}, {
+						fieldLabel : "邮箱",
+						xtype : 'textfield',
+						name : 'eamil'
 					}],
 			buttons : [{
 						xtype : 'button',
@@ -216,7 +239,7 @@ Ext.application({
 			launch : function() {
 				Ext.create('Ext.container.Viewport', {
 							layout : 'border',
-							items : [userForm, userGrid]
+							items : [studentForm, studentGrid]
 						});
 			}
 		});

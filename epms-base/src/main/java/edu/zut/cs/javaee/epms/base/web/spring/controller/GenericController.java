@@ -28,7 +28,6 @@ public abstract class GenericController<T extends BaseEntity, PK extends Seriali
 
 	protected int pageNumber = 0;
 	protected int pageSize = 20;
-
 	protected Pageable pageable = PageRequest.of(pageNumber, pageSize, new Sort(Direction.ASC, "id"));
 
 	/**
