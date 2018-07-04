@@ -1,9 +1,7 @@
 package edu.zut.cs.javaee.epms.customer.service;
 
-import edu.zut.cs.javaee.epms.admin.domain.User;
 import edu.zut.cs.javaee.epms.base.service.GenericManager;
 import edu.zut.cs.javaee.epms.customer.domain.Customer;
-import edu.zut.cs.javaee.epms.pay.domain.Pay;
 
 import java.util.List;
 
