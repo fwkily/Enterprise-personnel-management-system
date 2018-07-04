@@ -12,14 +12,9 @@
 </head>
 <body>
 
-	This is my main page!
+	欢迎使用 人事管理系统！<br>
+	<a href="http://localhost:8080/epms-web/user/user/index.html">用户管理</a ><br>
 
-	<div id="app">
-		<el-button @click="visible = true">Button</el-button>
-		<el-dialog :visible.sync="visible" title="Hello world">
-		<p>Try Element</p>
-		</el-dialog>
-	</div>
 
 
 </body>
