@@ -1,6 +1,6 @@
 var pageSize = 20;
 
-var studentStore = Ext.create('user.store.StudentStore');
+var studentStore = Ext.create('ensure.store.StudentStore');
 
 Ext.define('ensure.view.StudentGrid', {
 	extend : 'Ext.grid.GridPanel',
@@ -13,20 +13,20 @@ Ext.define('ensure.view.StudentGrid', {
 		sortable : true,
 		dataIndex : 'id'
 	}, {
-		text : "用户名称",
+		text : "维护名称",
 		width : 80,
 		sortable : true,
-		dataIndex : 'username'
+		dataIndex : 'name'
 	}, {
-		text : " 用户密码",
+		text : " 维护日期",
 		width : 80,
 		sortable : true,
-		dataIndex : 'password'
+		dataIndex : 'date'
 	}, {
-		text : "邮箱",
+		text : "维护描述",
 		width : 80,
 		sortable : true,
-		dataIndex : 'email'
+		dataIndex : 'info'
 	},{
 		text : "添加时间",
 		width : 150,
