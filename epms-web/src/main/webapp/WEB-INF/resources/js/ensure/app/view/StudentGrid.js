@@ -54,7 +54,7 @@ Ext.define('ensure.view.StudentGrid', {
 		lastText : '尾页',
 		nextText : '下页',
 		prevText : '前页',
-		beforePageText : '第',说
+		beforePageText : '第',
 		afterPageText : '页，共{0}页',
 		displayMsg : '记录数：第{0}条 - 第{1}条，共 {2}条',
 		emptyMsg : "没有记录"
