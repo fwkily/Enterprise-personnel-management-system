@@ -13,7 +13,7 @@ Ext.define('pay.view.StudentGrid', {
 		sortable : true,
 		dataIndex : 'name'
 	}, {
-		text : "工作",
+		text : "职位",
 		width : 80,
 		sortable : true,
 		dataIndex : 'work'

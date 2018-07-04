@@ -17,7 +17,7 @@ Ext.define('pay.view.StudentEdit', {
 			}, {
 				xtype : 'textfield',
 				name : 'work',
-				fieldLabel : '工作'
+				fieldLabel : '职位'
 			}, {
 				xtype : 'textfield',
 				name : 'time',

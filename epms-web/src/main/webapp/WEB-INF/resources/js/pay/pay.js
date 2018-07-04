@@ -124,7 +124,7 @@ var studentGrid = new Ext.grid.GridPanel({
 						sortable : true,
 						dataIndex : 'name'
 					}, {
-						text : "工作",
+						text : "职位",
 						width : 80,
 						sortable : true,
 						dataIndex : 'work',
@@ -217,7 +217,7 @@ var studentForm = new Ext.form.FormPanel({
 						xtype : 'textfield',
 						name : 'name'
 					}, {
-						fieldLabel : "工作",
+						fieldLabel : "职位",
 						xtype : 'textfield',
 						name : 'work'
 					}],
