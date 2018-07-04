@@ -12,16 +12,20 @@ Ext.define('pay.view.StudentEdit', {
 			border : false,
 			items : [ {
 				xtype : 'textfield',
-				name : 'username',
-				fieldLabel : '用户姓名'
+				name : 'name',
+				fieldLabel : '姓名'
 			}, {
 				xtype : 'textfield',
-				name : 'password',
-				fieldLabel : '用户密码'
+				name : 'work',
+				fieldLabel : '工作'
 			}, {
 				xtype : 'textfield',
-				name : 'email',
-				fieldLabel : '邮箱'
+				name : 'time',
+				fieldLabel : '工作时长'
+			}, {
+				xtype : 'time',
+				name : 'money',
+				fieldLabel : '薪资'
 			}]
 		} ];
 		this.buttons = [ {
