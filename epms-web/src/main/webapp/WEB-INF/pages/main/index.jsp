@@ -14,6 +14,10 @@
 
 	欢迎使用 人事管理系统！<br>
 	<a href="http://localhost:8080/epms-web/user/user/index.html">用户管理</a ><br>
+	<a href="http://localhost:8080/epms-web/pay/pay/index.html">薪资管理</a ><br>
+	<a href="http://localhost:8080/epms-web/module/module/index.html">模块管理</a ><br>
+	<a href="http://localhost:8080/epms-web/customer/customer/index.html">客户管理</a ><br>
+	<a href="http://localhost:8080/epms-web/ensure/ensure/index.html">后勤管理</a ><br>
 
 
 
