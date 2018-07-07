@@ -7,7 +7,13 @@ import edu.zut.cs.javaee.epms.base.service.GenericGenerator;
 import edu.zut.cs.javaee.epms.ensure.domain.Ensure;
 
 public class EnsureEntityGenerator extends GenericGenerator {
-
+	/**
+	 * EnsureManager test class
+	 * Ensure Database mapping test
+	 * This class can test the availability of EnsureManager
+	 * @author lsz
+	 *
+	 */
 	@Autowired
 	EnsureManager ensureManager;
 
