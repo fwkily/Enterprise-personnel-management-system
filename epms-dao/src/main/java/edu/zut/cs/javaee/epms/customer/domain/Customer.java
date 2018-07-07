@@ -14,18 +14,18 @@ import edu.zut.cs.javaee.epms.pay.domain.Pay;
 @Entity
 @NamedQueries({ @NamedQuery(name = "Customer.getRoot", query = "select m from Customer m where m.parent is null") })
 public class Customer extends BaseTreeEntity<Customer> {
-
-	/**
-	 * 
+	/** 
+	 * Customer entity class
 	 */
 	private static final long serialVersionUID = -6172780675713487492L;
 	
 	@Column(name = "ADDRESS")
 	String address;
+//	customer address
 
 	@Column(name = "POSTCODE")
 	String postcode;
-
+//  customer postcode
 	public String getAddress() {
 		return address;
 	}

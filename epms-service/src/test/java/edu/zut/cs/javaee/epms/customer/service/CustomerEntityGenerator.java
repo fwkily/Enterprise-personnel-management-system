@@ -7,6 +7,11 @@ import edu.zut.cs.javaee.epms.base.service.GenericGenerator;
 import edu.zut.cs.javaee.epms.customer.domain.Customer;
 
 public class CustomerEntityGenerator extends GenericGenerator {
+	/**
+	 * CustomerManager test class
+	 *Customer Database mapping test
+	 * This class can test the availability of CustomerManager
+	 */
 
 	@Autowired
 	CustomerManager customerManager;

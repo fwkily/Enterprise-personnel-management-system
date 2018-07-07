@@ -7,7 +7,13 @@ import edu.zut.cs.javaee.epms.customer.service.CustomerManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
+/**
+ * customer managerimpl class
+ * CustomerManagerImpl extends GenericManagerImpl and it's CustomerManager interface
+ * @param Customer class
+ * @author zhangjinzeng
+ *
+ */
 @Component
 public class CustomerManagerImpl extends GenericManagerImpl<Customer, Long> implements CustomerManager {
 
