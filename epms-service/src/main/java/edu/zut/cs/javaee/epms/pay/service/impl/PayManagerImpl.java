@@ -10,7 +10,13 @@ import edu.zut.cs.javaee.epms.base.service.impl.GenericManagerImpl;
 import edu.zut.cs.javaee.epms.pay.dao.PayDao;
 import edu.zut.cs.javaee.epms.pay.domain.Pay;
 import edu.zut.cs.javaee.epms.pay.service.PayManager;
-
+/**
+ * pay managerimpl class
+ * PayManagerImpl extends GenericManagerImpl and it's PayManager interface
+ * @param Pay class
+ * @author zhougenhui
+ *
+ */
 @Component
 public class PayManagerImpl extends GenericManagerImpl<Pay, Long> implements PayManager {
 

@@ -18,13 +18,13 @@ public class Pay extends BaseTreeEntity<Pay> {
 	 */
 	private static final long serialVersionUID = 1945866957570000331L;
 
-	@Column(name = "NAME")
+	@Column(name = "NAME")//Pay name
 	String name;
-	@Column(name = "WORK")
+	@Column(name = "WORK")//Pay work
 	String work;
-	@Column(name = "TIME")
+	@Column(name = "TIME")//Pay time
 	String time;
-	@Column(name = "MONEY")
+	@Column(name = "MONEY")//Pay money
 	String money;
 	public String getName() {
 		return name;

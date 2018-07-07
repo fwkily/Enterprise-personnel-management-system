@@ -7,6 +7,13 @@ import edu.zut.cs.javaee.epms.base.service.GenericGenerator;
 import edu.zut.cs.javaee.epms.pay.domain.Pay;
 
 public class PayEntityGenerator extends GenericGenerator {
+	/**
+	 * PayManager test class
+	 * Pay Database mapping test
+	 * This class can test the availability of PayManager
+	 * @author zhougenhui
+	 *
+	 */
 
 	@Autowired
 	PayManager payManager;
