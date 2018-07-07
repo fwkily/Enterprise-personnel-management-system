@@ -14,16 +14,22 @@ public class User extends BaseEntity {
 
 	/**
 	 * 
+	 * 
+	 * User entity class
+	 * @author lsz
 	 */
 	private static final long serialVersionUID = -4376674977047164142L;
 
 	@Column(name = "USERNAME")
+	//User username
 	String username;
 
 	@Column(name = "PASSWORD")
+	//User password
 	String password;
 
 	@Column(name = "EMAIL")
+	//User email
 	String email;
 
 	public Group getGroup() {

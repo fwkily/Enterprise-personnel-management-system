@@ -17,15 +17,8 @@ class UserDaoTest {
 	UserDao userDao;
 
 	@Test
-	void test() {
-		String username = "world";
-		User query = new User();
-		// List<User> result = this.userDao.findOne(null);
-
-		User expectedUser = new User();
-		// expectedUser.setUsername(username);
-		// assertEquals(user, expectedUser);
-		// assertEquals(user.getUsername(), expectedUser.getUsername());
+	public void testFindByUsername() {
+		userDao.findByUsername("username1");
 	}
 
 }

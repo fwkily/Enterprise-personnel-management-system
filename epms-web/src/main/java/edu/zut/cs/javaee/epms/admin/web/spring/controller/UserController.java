@@ -10,7 +10,7 @@ import edu.zut.cs.javaee.epms.admin.service.UserManager;
 import edu.zut.cs.javaee.epms.base.web.spring.controller.GenericController;
 
 @Controller
-@RequestMapping("/user/user")
+@RequestMapping("/user/user") //requestMapping 
 public class UserController extends GenericController<User, Long, UserManager> {
 
     UserManager userManager;

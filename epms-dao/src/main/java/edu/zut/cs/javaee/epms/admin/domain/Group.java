@@ -20,13 +20,18 @@ public class Group extends BaseTreeEntity<Group> {
 
 	/**
 	 * 
+	 * 
+	 * Group entity class
+	 * @author lsz
 	 */
 	private static final long serialVersionUID = -1751952224371998469L;
 
 	@Column(name = "NAME")
+	//Group name
 	String name;
 
 	@OneToMany(mappedBy = "group", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+	//OneToMany Group to Users
 	Set<User> users;
 
 	public String getName() {

@@ -12,10 +12,14 @@ public class Role extends BaseEntity {
 
 	/**
 	 * 
+	 * 
+	 * Role entity class
+	 * @author lsz
 	 */
 	private static final long serialVersionUID = 1L;
 
 	@Column
+	//Role name
 	String name;
 
 	public String getName() {

@@ -8,7 +8,13 @@ import edu.zut.cs.javaee.epms.admin.domain.User;
 import edu.zut.cs.javaee.epms.base.service.GenericGenerator;
 
 public class AdminEntityGenerator extends GenericGenerator {
-
+	/**
+	 * AdminManager test class
+	 * Admin Database mapping test
+	 * This class can test the availability of UserManager
+	 * @author lsz
+	 *
+	 */
 	@Autowired
 	GroupManager groupManager;
 
