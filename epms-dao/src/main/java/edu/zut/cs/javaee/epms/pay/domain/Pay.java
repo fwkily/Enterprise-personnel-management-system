@@ -15,6 +15,9 @@ public class Pay extends BaseTreeEntity<Pay> {
 
 	/**
 	 * 
+	 * 
+	 * Pay entity class
+	 * @author zhougenhui
 	 */
 	private static final long serialVersionUID = 1945866957570000331L;
 
