@@ -7,7 +7,13 @@ import edu.zut.cs.javaee.epms.admin.dao.UserDao;
 import edu.zut.cs.javaee.epms.admin.domain.User;
 import edu.zut.cs.javaee.epms.admin.service.UserManager;
 import edu.zut.cs.javaee.epms.base.service.impl.GenericManagerImpl;
-
+/**
+ * user managerimpl class
+ * UserManagerImpl extends GenericManagerImpl and it's UserManager interface
+ * @param User class
+ * @author lsz
+ *
+ */
 @Component
 public class UserManagerImpl extends GenericManagerImpl<User, Long> implements UserManager {
 
