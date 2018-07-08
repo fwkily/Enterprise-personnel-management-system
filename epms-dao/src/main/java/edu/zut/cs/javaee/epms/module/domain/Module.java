@@ -20,15 +20,15 @@ public class Module extends BaseTreeEntity<Module> {
 	String description;
 
 	String name;
-
+	//module_description
 	public String getDescription() {
 		return description;
 	}
-
+	//module_name
 	public String getName() {
 		return name;
 	}
-
+	
 	public void setDescription(String description) {
 		this.description = description;
 	}

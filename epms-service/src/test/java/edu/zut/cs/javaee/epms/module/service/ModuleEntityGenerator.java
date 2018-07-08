@@ -6,7 +6,13 @@ import  edu.zut.cs.javaee.epms.module.domain.Module;
 import edu.zut.cs.javaee.epms.base.service.GenericGenerator;
 
 public class ModuleEntityGenerator extends GenericGenerator {
-
+	/**
+	 * ModuleManager test class
+	 * Module Database mapping test
+	 * This class can test the availability of ModuleManager
+	 * @author shiwujun
+	 *
+	 */
 	@Autowired
 	ModuleManager moduleManager;
 
