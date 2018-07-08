@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import edu.zut.cs.javaee.epms.admin.dao.GroupDao;
 import edu.zut.cs.javaee.epms.admin.domain.Group;
 import edu.zut.cs.javaee.epms.admin.service.GroupManager;
-import edu.zut.cs.javaee.epms.base.service.impl.GenericTreeManagerImpl;
+import edu.zut.cs.javaee.epms.base.service.impl.GenericManagerImpl;
 /**
  * group managerimpl class
  * GroupManagerImpl extends GenericManagerImpl and it's GroupManager interface
@@ -20,7 +20,7 @@ import edu.zut.cs.javaee.epms.base.service.impl.GenericTreeManagerImpl;
  */
 @Service("groupManager")
 @Transactional
-public class GroupManagerImpl extends GenericTreeManagerImpl<Group, Long> implements GroupManager {
+public class GroupManagerImpl extends GenericManagerImpl<Group, Long> implements GroupManager {
 
 	GroupDao groupDao;
 	private Logger logger = LoggerFactory.getLogger(GroupManagerImpl.class);
